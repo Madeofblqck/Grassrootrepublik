@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrassRoot Republik</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <header>
+       <h3 class="heading">GrassRoot Republik</h3>
+        <div class="logo">
+            <a href="index.html"><img src="grassrootrepublik.jpg" alt="grassrootrepublik" width="100" height="100"></a>
+        </div>
+
+        <div class="navbar">
+          <nav>
+              <a href="#Home">Home</a>
+              <a href="#About">About</a>
+              <a href="#Contact">Contact</a>
+          </nav>
+        </div>     
+   </header>
+
+   <section id="Home">
+     <h3>Welcome to GrassRoot Republik!</h3>
+     <p><b>Grassroot Republik</b> round neck tees are available for pre-order!<br>Secure your tee today and be among the first to rock this fresh new designs. <br> 10% discount applied!</p>
+   </section>
+
+   <div class="tee1">
+     <img src="grassroot1.jpg" alt="grassroot1">
+     <h4>Black Hood Republik Tee</h4>
+   </div>
+
+   <div class="tee1-1">
+     <img src="grassroot1.1.jpg" alt="grassroot1.1">
+     <h4>Black Membership Tee</h4>
+   </div>
+   
+   <div class="tee2">
+     <img src="grassroot2.jpg" alt="grassroot2">
+     <h4>White Hood Republik Tee</h4>
+   </div>
+
+   <div class="tee2-2">
+     <img src="grassroot2.2.jpg" alt="grassroot2.2">
+     <h4>White Membership Tee</h4>
+   </div>
+
+   <div class="tee3">
+     <img src="grassroot3.jpg" alt="grassroot3">
+     <h4>Brown Hood Republik Tee</h4>
+   </div>
+
+   <div class="tee3-3">
+      <img src="grassroot3.3.jpg" alt="grassroot3.3">
+      <h4>Brown Membership Tee</h4>
+   </div>
+
+    <div class="tee4">
+      <img src="grassroot4.jpg" alt="grassroot4">
+      <h4>Green Hood Republik Tee</h4>
+    </div>
+
+    <div class="tee4-4">
+      <img src="grassroot4.4.jpg" alt="grassroot4.4">
+      <h4>Green Membership Tee</h4>
+    </div>
+
+    <div class="tee5">
+      <img src="grassroot5.jpg" alt="grassroot5">
+      <h4>Ash Hood Republik Tee</h4>
+    </div>
+
+    <div class="tee5-5">
+      <img src="grassroot5.5.jpg" alt="grassroot5.5">
+      <h4>Ash Membership Tee</h4>
+    </div>
+
+    <div class="tee6">
+      <img src="grassroot6.jpg" alt="grassroot6">
+      <h4>Red Hood Republik Tee</h4>
+    </div>
+
+    <div class="tee6-6">
+      <img src="grassroot6.6.jpg" alt="grassroot6.6">
+      <h4>Red Membership Tee</h4>
+    </div>
+
+   <div class="shop-button">
+        <button onclick="shopNow()">Shop Now</button>
+    </div>
+
+   <section id="About">
+     <h3>About Us</h3>
+     <p>At <b>Grassroot Republik,</b> we are passionate about creating apparel that not only looks great but also tells a story. <br> Our designs are inspired by the vibrant energy of city life, <br> and our mission is to empower individuals to express themselves confidently and authentically.</p>
+   </section>
+
+   <section id="Features">
+      <h3>Key features of our brand include:</h3>
+       <ul id="list">
+          <li>Unique, bold designs that blend streetwear with high-fashion elements.</li>
+          <li>Premium quality materials and craftsmanship.</li>
+          <li>Affordable prices without compromising on style or quality.</li>
+       </ul>
+   </section>
+
+   <section id="Contact">
+        <div class="social-icons">
+            <p>Pre-order now and get ready to join the movement!</p>
+            <p>If you're interested in staying up-to-date, please follow us:</p>
+            <a href="https://www.instagram.com/grassroot_republik/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+    
+            <a href="https://www.tiktok.com/@grassrootrepublik25" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+   </section>
+
+   <p class="contact-p">Hurry limited quantities available!</p>
+
+    <footer>
+      <p>&copy; GrassRoot Republik. All rights reserved.</p>
+    </footer>
+
+    <script>
+       function shopNow() {
+    window.open("https://wa.me/2349015347092?text=I'm%20interested%20in%20pre-ordering!", "_blank");
+        }   
+        document.addEventListener("DOMContentLoaded", function () {
+            let sections = document.querySelectorAll("section");
+
+            function revealOnScroll() {
+                sections.forEach((section) => {
+                    let sectionTop = section.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+                    if (sectionTop < windowHeight - 50) {
+                        section.style.opacity = "1";
+                        section.style.transform = "translateY(0)";
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", revealOnScroll);
+            revealOnScroll();
+        });
+    </script>
+
+</body>
+</html>
